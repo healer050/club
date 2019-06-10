@@ -1,0 +1,189 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1, h2, h3, h4, h5, h6, hr,p, blockquote, dl, dt, 
+dd,ul, ol, li, pre, form,fieldset, legend, button,input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+a{
+  text-decoration: none;
+}
+
+
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide a img{
+      width: 100%;
+      height: 520px;
+
+    }
+
+
+    .home-custom{
+      height: 468px;
+      width: 100%;
+      background: #fff;
+      display: flex;
+      padding: 40px 0;
+    }
+    .home-custom:nth-child(1){
+      margin-left: 10px;
+    }
+    .home-custom:nth-child(2){
+      margin-left: 10px;
+    }
+
+/*人气推荐recommend*/
+.home-recomme{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center;*/
+
+
+}
+.home-recomme h1{
+  font-size: 40px;
+}
+
+#home-list{
+
+  margin: 0 auto;
+  width: 1300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+#home-list li{
+  background: #fff;
+  list-style: none;
+  width: 22%;
+  margin-top: 15px;
+  margin-left: 15px;
+
+}
+#home-list li p{
+  color: #000;
+  font-size: 12px;
+  text-indent: 12px;
+}
+#home-list li p span{
+  color: red;
+  font-size: 18px;
+  text-indent: 12px;
+  font-weight: 600;
+}
+
+
+/* C's CLUB*/
+
+.home-clubMain{
+  width: 100%;
+  margin-top: 50px;
+
+}
+.home-clubMain h1{
+font-size: 40px;
+  margin-left: 42%;
+
+}
+.home-club{
+    margin-top: 30px;
+  display: flex;
+  /*flex: 1;*/
+}
+.home-club .title{
+    margin-top: 25px;
+    width: 397px;
+    text-align: center;
+    font-size: 32px;
+    color: #000;
+    font-weight: 700;
+}
+.home-club .line{
+     margin-left: 160px;
+     margin-top: 25px;
+    display: block;
+    width: 60px;
+    border-bottom: none;
+    border-top: 2px solid #4a3838;
+}
+.home-club .desc{
+    margin-top: 25px;
+    width: 397px;
+    text-align: center;
+    display: block;
+    font-size: 21px;
+    color: #949391;
+}
+.home-c1{
+  width: 33%;
+  height: 370px;
+  background: red;
+  background: url("../img/home-club1.jpg");
+}
+.home-c2{
+  width: 33%;
+  margin-left: 10px;
+
+  height: 370px;
+background: url("../img/home-club2.jpg");
+}
+
+.home-c3{
+  margin-left: 10px;
+  width: 33%;
+  height: 370px;
+
+}
+.home-c3-qu{
+  height: 180px;
+  background: skyblue;
+background: url("../img/home-club3.jpg");
+}
+.home-c3-vip{
+  background: green;
+  margin-top: 10px;
+  height: 180px;
+background: url("../img/home-club4.jpg");
+}
+
+

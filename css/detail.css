@@ -1,0 +1,163 @@
+
+body{
+	background: #fff;
+}
+
+
+/*放大镜*/
+#det-small{
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 150px;
+	left: 80px;
+	/*background:url(../img/home1.png);*/
+	background-size: 400px 400px; 
+	border: 1px solid gray;
+}
+#det-mask{
+	width: 150px;
+	height: 150px;
+	position: absolute; 
+	background: blue;
+	opacity: 0.3;
+	border: 1px solid gray;
+	display: none;
+
+}
+#det-big{
+	width: 450px;
+	height: 450px;
+	position: absolute;
+	top:150px;
+	left: 482px;
+	/*background: url(../img/home1.png);*/
+	background-size: 1200px 1200px;
+	border: 1px solid gray; 
+	display: none;
+	
+}
+
+
+
+/*center*/
+.det-section{
+	width: 100%;
+}
+.det-center{
+	height: 500px;
+	width: 1128px;
+	margin: 0 auto;
+	/* background: red; */
+	margin-top: 0;
+
+}
+
+/*商品详细信息*/
+.det-mess{
+	height: 470px;
+	width: 580px;
+	/*background: blue;*/
+	float: right;
+	margin-right: 100px;
+	margin-top: 20px;
+}
+
+#det-mess-text{
+	height: 80px;
+	width: 400px;
+	font-size: 16px;
+	/* background: skyblue; */
+	/*margin-left: 20px;*/
+/*	position: absolute;
+	top:150px;*/
+}
+
+.det-mess-pre{
+	width: 580px;
+	height: 100px;
+	background: #f6f6f6;
+	font-size: 14px;
+	color: grey;
+	text-indent: 12px;
+}
+#det-mess-pre{
+	color: red;
+	font-size: 24px;
+	/*margin-top: 150px;*/
+}
+
+.buy-credit{
+	margin-top: 25px;
+}
+
+
+.buy-credit img{
+	margin-left: 20px;
+}
+.det-color{
+	margin-top: 20px;
+}
+.det-goods-num button{
+	margin-top: 25px;
+	margin-left: 10px;
+	width: 20px;
+	height: 25px;
+
+
+}
+
+#det-num{
+	margin-left: 10px;
+}
+
+.det-goods-day{
+	margin-top: 25px;
+}
+.det-goods-day button{
+	margin-left: 20px;
+}
+
+.det-buy{
+	margin-top: 25px;
+}
+
+.det-buy a{
+	display: inline-block;
+	height: 40px;
+	/*width: 80px;*/
+	font-size: 20px;
+	color: #fff;
+	background: #000;
+	margin-left: 20px;
+	line-height: 40px;
+	padding: 0 10px;
+
+}
+
+/* 商品详情 */
+.det-goods{
+	height: 100%;
+	width: 1128px;
+	margin:0 auto;
+}
+.det-nav{
+	width: 1128px;
+	height: 50px;
+	background: red;
+	/* margin-left: 300px; */
+
+}
+
+.det-nav .det-nav-1{
+	float: left;
+	width: 278px;
+	height: 40px;
+	color: #fff;
+	background: #000;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+	padding: 0 20px;
+	overflow: hidden;
+}

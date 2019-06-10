@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1, h2, h3, h4, h5, h6, hr,p, blockquote, dl, dt, 
+dd,ul, ol, li, pre, form,fieldset, legend, button,input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+a{
+	text-decoration: none;
+}
+
+/**/
+body{
+	background: #f7f7f7;
+}
+
+.box{
+	width: 860px;
+    min-height: 670px;
+    background: #fff;
+    margin: 0 auto;
+    margin-top: 80px;
+    overflow: hidden;
+}
+.reg_img{
+	width: 360px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.reg_img h1{
+	color: #000;
+	font-size: 22px;
+	text-align: center;
+	font-weight: 100;
+}
+.reg_img img{
+    margin: 15px 95px;
+
+}
+
+form{
+	width: 360px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+input{
+	height: 46px;
+	width: 350px;
+    /*position: relative;*/
+    margin-top: 30px; 
+    text-indent: 10px;
+}
+
+#reg_code{
+
+width: 200px;
+
+}
+
+
+#codeSpan{
+    width:80px;
+    height: 40px;
+    border: 1px solid red;
+    display: inline-block;
+    /*margin-top:15px;*/
+    line-height: 42px;
+}
+#btn{
+	/*width: 9.9rem;*/
+    /*height: 1.2rem;*/
+    margin: 0 auto;
+    /*margin-top: .72rem;*/
+    text-align: center;
+    /*line-height: 1.2rem;*/
+    /*font-size: .45rem;*/
+    color: #fff;
+    border-radius: .6rem;
+    background-color: #46a1fa;
+    background-image: linear-gradient(90deg,#418eff,#4566ff);
+    margin-top: 30px;
+}
