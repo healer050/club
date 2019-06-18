@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1, h2, h3, h4, h5, h6, hr,p, blockquote, dl, dt, 
+dd,ul, ol, li, pre, form,fieldset, legend, button,input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+a{
+	text-decoration: none;
+}s
+
+#cart-main{
+	width: 100%;
+	margin-top: 190px;
+}
+.cart-section{
+	
+	width: 1128px;
+	margin: 110px auto; 
+
+}
+.cart-hea-img{
+	width: 642px;
+	margin: 20px auto;
+
+}
+
+.cart-br{
+	height: 20px;
+	background: #fafafc;
+}
+
+
+/*购物车详情*/
+.cart-tip-header{
+	margin: 20px 0;
+}
+
+.cart-table{
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0 auto;
+	text-align: center;
+}
+.cart-table tr th,td{
+	text-align: center;
+}
+.cart-goods{
+	height: 60px;
+	margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	background: #fafafb;
+	border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+
+/*添加购物车样式*/
+
+.cart-info{
+	width: 200px;
+}
+.cart-add-goods{
+border-bottom: 1px solid #ededed;
+}
+.cart-add-goods img{
+	margin-left: 20px;
+}
+.cart-num{
+	display: inline-block;
+	width: 40px;
+	height: 25px;
+	/*background: red;*/
+}
+.cart-minu{
+	width: 25px;
+	height: 25px;
+
+}
+.cart-plus{
+	width: 25px;
+	height: 25px;
+}
+.cart-sum{
+	height: 60px;
+}
+.cart-sum h4{
+	float: right;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+/*结算*/
+.cart-set{
+	/*height: 60px;*/
+	background: #fafafb;
+}
+
+
+.cart-set h4{
+	width: 150px;
+	height: 45px;
+	float: right;
+	padding: 10px 40px;
+    background-color: #c60c21;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 31px;
+}
+
+.cart-del:hover{
+	cursor: pointer;
+}
+
+#cart-save{
+	width: 150px;
+	float: right;
+	padding: 10px 40px;
+    background-color: #c60c21;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+
+}

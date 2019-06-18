@@ -11,12 +11,12 @@ $conn = mysql_connect("localhost:3307","root","root");
 // }
 	
 	 //选择数据库
-	mysql_select_db("vivo");
+	mysql_select_db("club");
 	$name = $_POST["username"];
 	$pwd = $_POST["userpwd"];
 	// echo $name,$pwd;
 
-	$reslut = mysql_query("select * from vivoUser where vname='$name' and vpwd='$pwd'",$conn);
+	$reslut = mysql_query("select * from clubuser where uname='$name' and upwd='$pwd'",$conn);
 	$rows = mysql_num_rows($reslut);
 
 	if($rows==1){

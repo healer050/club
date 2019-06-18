@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/public.css">
+		<style>
+			.spancart{
+				width:120px;
+				height:40px;
+				font-weight: 600;
+				line-height:40px;
+				display:inline-block;
+				font-size: 24px;
+				vertical-align: bottom;
+			}
+			#section{
+				width:1000px;
+				margin:10px auto;
+			}
+			.checkbox{
+				width:15px;
+				height:15px;
+			}
+			thead{
+				background:gainsboro;
+				height:40px;
+				line-height: 40px;;
+			}
+			.cart-table .mount{
+				width:20px;
+				height:20px;
+			}
+			.cart-table button{
+				width:25px;
+				height:24px;
+			}
+			.cart-table{
+				text-align:center;
+			}
+			.delAll span:nth-child(1){
+				width:120px;
+				height:40px;
+				background:red;
+				border-radius:10px;
+				border:1px;
+				display:inline-block;
+				line-height:40px;
+				text-align:center;
+			}
+			.delAll span:nth-child(2){
+				width:120px;
+				height:40px;
+				background:red;
+				border-radius:10px;
+				border:1px;
+				display:inline-block;
+				line-height:40px;
+				margin-left:20px;
+				text-align:center;
+			}
+			.delAll span:nth-child(3){
+				width:120px;
+				height:40px;
+				background:red;
+				border-radius:10px;
+				border:1px;
+				display:inline-block;
+				line-height:40px;
+				margin-left:20px;
+				text-align:center;
+			}
+			.delAll span:nth-child(4){
+				/* width:120px; */
+				height:40px;
+				background:green;
+				border-radius:10px;
+				border:1px;
+				display:inline-block;
+				line-height:40px;
+				float:right;
+			}
+			.shopimg{
+				width:100%;
+				height:100%;
+				margin:30px auto;
+			}
+		
+			.footer{
+				width:100%;
+				border-top:3px solid lightgray;
+			}
+			#btnSave{
+				width:100px;
+				height:40px;
+				background:red;
+			}
+			*{
+				cursor: pointer;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<div id="header">
+					<div id="head">
+					<div class="top">
+						<div class="left" id="top-left1">
+							<img src="img/logo.png">
+							<a href="login.html">登录</a>
+							<a href="register1.html">注册</a>
+						</div>
+						<div class="left" id="top-left2">
+							<img src="img/logo.png">
+							<a>欢迎您！<span id="name"></span></a>
+							<a id="out">退出</a>
+						</div>
+						<div class="right">
+							<a href="login.html">我的安踏</a>
+							<a href="paging.html">品牌官网</a>
+							<a href="#">手机商城</a>
+							<a href="#">企业团购</a>
+							<a href="#">购物车</a>
+						</div>
+					</div>
+					<div class="headTwo" id="headTwo">
+						<div class="second">
+							<ul id="Ul">
+								<li class="ht">
+									<a href="index.html" class="ha">首页</a>
+									
+									
+								</li>
+								<li class="ht">
+									<a class="ha">跑步</a>
+									<ul class="hUl">
+										<li>
+											<h4>男子跑步</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+											<a href="#">加大码跑鞋</a>
+										</li>
+										<li >
+											<h4>女子跑步</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+											<a href="#">加大码跑鞋</a>
+										</li>
+										<li>
+											<h4>儿童跑步系列</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+										</li>
+									</ul>
+								</li>
+								<li class="ht">
+									<a class="ha">篮球</a>
+									<ul class="hUl">
+										<li>
+											<h4>男子跑步</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+											<a href="#">加大码跑鞋</a>
+										</li>
+										<li>
+											<h4>女子跑步</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+											<a href="#">加大码跑鞋</a>
+										</li>
+										<li>
+											<h4>儿童跑步系列</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+										</li>
+									</ul>
+								</li>
+								<li class="ht">
+									<a class="ha" >足球</a>
+									<ul class="hUl">
+										<li>
+											<h4>男子跑步</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+											<a href="#">加大码跑鞋</a>
+										</li>
+										<li>
+											<h4>女子跑步</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+											<a href="#">加大码跑鞋</a>
+										</li>
+										<li>
+											<h4>儿童跑步系列</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+										</li>
+									</ul>
+								</li>
+								<li class="ht">
+									<a class="ha">健身</a>
+									<ul class="hUl">
+										<li>
+											<h4>男子跑步</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+											<a href="#">加大码跑鞋</a>
+										</li>
+										<li>
+											<h4>女子跑步</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+											<a href="#">加大码跑鞋</a>
+										</li>
+										<li>
+											<h4>儿童跑步系列</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+										</li>
+									</ul>
+								</li>
+								<li class="ht">
+									<a class="ha">休闲</a>
+									<ul class="hUl">
+										<li>
+											<h4>男子跑步</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+											<a href="#">加大码跑鞋</a>
+										</li>
+										<li>
+											<h4>女子跑步</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+											<a href="#">加大码跑鞋</a>
+										</li>
+										<li>
+											<h4>儿童跑步系列</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+										</li>
+									</ul>
+								</li>
+								<li class="ht">
+									<a class="ha" >配件</a>
+									<ul class="hUl">
+										<li>
+											<h4>男子跑步</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+											<a href="#">加大码跑鞋</a>
+										</li>
+										<li>
+											<h4>女子跑步</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+											<a href="#">加大码跑鞋</a>
+										</li>
+										<li>
+											<h4>儿童跑步系列</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+										</li>
+									</ul>
+								</li>
+								<li class="ht">
+									<a class="ha">儿童</a>
+									<ul class="hUl">
+										<li>
+											<h4>男子跑步</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+											<a href="#">加大码跑鞋</a>
+										</li>
+										<li>
+											<h4>女子跑步</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+											<a href="#">加大码跑鞋</a>
+										</li>
+										<li>
+											<h4>儿童跑步系列</h4>
+											<a href="#">跑步鞋</a>
+											<a href="#">跑步服</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<input  class="in-one" type="text"><input type="button" class="in-two" value="搜索">
+						</div>
+					</div>
+				</div>
+		</div>
+		<div id="section">
+			<img class="shopimg" src="img/substep_01.jpg">
+			<div><span class="spancart">我的购物车</span><img class="spancart" src="img/coupons-btn-pc.png"/></div>
+			<table class="cart-table">
+				<thead>
+					<tr>
+						<th width='50'><input type="checkbox" class="check-first"></th>
+						<th width='150'>商品编号</th>
+						<th width='100'>商品图片</th>
+						<th width='250'>商品信息</th>
+						<th width='80'>单价</th>
+						<th width='150'>商品数量</th>
+						<th width='150'>删除商品</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+				<tfoot>
+					<tr><td colspan="6">可用的优惠券</td><tr>
+					
+				</tfoot>
+				
+			</table>
+			<div class="delAll">
+				<span class="little">删除选中的商品</span><span class="del-all">清空购物车</span><span id="btnSave">保存数据</span><span>应付金额:￥<b class="sumPrice">0</b></span>
+			</div>
+			<!-- <div id="btnSave">保存数据</div> -->
+		</div>
+		<!-- 尾部 -->
+		<div class="footer">
+			<div id="foot">
+				<ul class="serve-list">
+					<li class="item-first">
+						<h4>用户指南</h4>
+						<a href="register1.html">新用户注册</a>
+						<a href="http://www.anta.cn/help-44.html" target="_blank">购物流程</a>
+						<a href="http://www.anta.cn/help-40.html" target="_blank">尺码对照表</a>
+						<a href="http://www.anta.cn/help-47.html" target="_blank">支付方式</a>
+						<a href="http://www.anta.cn/help-54.html" target="_blank">包装形式</a>
+						<a href="http://www.anta.cn/help-50.html" target="_blank">配送方式</a>
+						<a href="http://www.anta.cn/help-49.html" target="_blank">配送费用</a>
+					</li>
+					<li class="item-second">
+						<h4>会员政策</h4>
+						<a href="http://www.anta.cn/help-38.html" target="_blank">积分政策</a>
+						<a href="http://www.anta.cn/help-56.html" target="_blank">会员政策</a>
+						<a href="http://www.anta.cn/help-37.html" target="_blank">用户协议</a>
+						<a href="http://www.anta.cn/help-46.html" target="_blank">发票制度</a>
+					</li>
+					<li class="item-third">
+						<h4>售后服务</h4>
+						<a href="http://www.anta.cn/help-43.html" target="_blank">订单查询</a>
+						<a href="http://www.anta.cn/help-48.html" target="_blank">快递查询</a>
+						<a href="http://www.anta.cn/help-52.html" target="_blank">退换货政策</a>
+						<a href="http://www.anta.cn/help-51.html" target="_blank">退换货流程</a>
+						<a href="http://www.anta.cn/help-53.html" target="_blank">退款方式</a>
+					</li>
+					<li class="item-fourth">
+						<h4>联系我们</h4>
+						<a href="http://www.anta.cn/tuan.shtml" target="_blank">企业团购</a>
+						<a href="http://www.anta.cn/help-58.html" target="_blank">商务合作</a>
+					</li>
+				</ul>
+				<div id="fRight">
+					<h4>在线咨询</h4>
+					<h3>400-8552-200</h3>
+					<button>在线客服</button><br/>
+					<h4>微信咨询</h4>
+					<img src="img/weixin.jpg">
+					
+				</div>
+			</div>
+			<div class="footerSeond">
+				<div class="footBottom">
+					<span class="spanLeft">COPYRIGHT 2012-2019 &nbsp;&nbsp;&nbsp;&nbsp; 厦门安踏电子商务有限公司 &nbsp;&nbsp;&nbsp;&nbsp;闽ICP备11020421号</span><span class="spanRight"><a target="_blank" href="/help-60.html">营业执照</a><a target="_blank" href="/help-61.html"> 开户许可证</a><a target="_blank" href="/sitemap.shtml">网站地图</a><a target="_blank" href="/tag-hot.html">标签</a><a target="_blank" href="/help-59.html">友情链接</a></span>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
+<script src="js/jQuery.js"></script>
+<script src="js/public.js"></script>
+<script src="js/goods.js"></script>
+<script src="js/myAjax.js"></script>
+<script>
+	$(function(){
+		
+		let xhr 
+		if(window.ActiveXObject){
+			//ie
+			xhr = new ActiveXObject("Microsoft.XMLHttp")
+		}else{
+			//非ie
+			xhr =new XMLHttpRequest();
+		}
+		xhr.open("get","shoppingcart.php",true);
+		xhr.send();
+		xhr.onreadystatechange=function(){
+			if(xhr.status==200 && xhr.readyState==4){
+				$("tbody").html(xhr.responseText);
+				// console.log(xhr.responseText);
+				//删除本行
+				$(".del-row").click(function(){
+					$(this).parent().parent().remove();
+					
+				});
+				// console.log($(".del-row").length);
+					totalPrice();
+					$(".minu").click(function(){
+						let m =Number($(this).next().html());
+						// console.log(m);
+						if(m>0){
+							m--;
+							$(this).next().html(m);
+						}
+						if(m==0){
+							$(this).parent().parent().remove();
+						}
+						totalPrice();
+						// somePrice();
+					});
+				
+				$(".plus").click(function(){
+					let m=Number($(this).prev(".mount").html());
+					m++;
+					$(this).prev(".mount").html(m);
+					//调用总价的函数
+					totalPrice();
+					// somePrice();
+				});
+				//总价
+				// function totalPrice(){
+				// 	// let m = $("tbody tr").length;
+				// 	let m = $("tbody tr").children("input:checked").length;
+				// 	console.log(m);
+				// 	let sum=0;
+				// 	for(let i=0;i<m;i++){
+				// 		sum+= Number($(".mount").eq(i).html())* Number($(".gprice").eq(i).html());
+				// 	}
+				// 	console.log(m);
+				// 	$(".sumPrice").html(sum);
+				// }
+				
+				// 全选按钮
+				$(".check-first").click(function(){
+					$(".checkbox").attr("checked",true);
+					// let that=this;
+					$(this).attr("checked",false);
+					$(".little").click(function(){
+						$(".checkbox:checked").parent().parent().remove();
+						// $("input:checked").not($(".check-first")[0]).parent().parent().remove();
+					
+					});
+				});
+				$(".little").click(function(){
+					$("input:checked").parent().parent().remove();
+				
+				});
+				function somePrice(){
+				var n=$("input:checked").parent().parent().length;
+				brr=0;
+				for(let i=0;i<n;i++){
+					brr+=Number($("input:checked").parent().siblings().children(".mount").eq(i).html())*Number($("input:checked").parent().siblings().children(".gprice").eq(i).html());
+					// brr+=Number($(".mount").eq(i).html())* Number($(".gprice").eq(i).html());
+				}
+				$(".sumPrice").html(brr);
+				}
+				
+					getData();
+					
+			}
+		}
+		
+		$("#btnSave").click(function(){
+							saveData();
+						});
+			// getData();
+	});
+	// 商品数量的加减
+	//商品减少
+	// function goodsMin(btn){
+ //       let oGoodsNum=btn.nextElementSibling;
+	// 	  if(oGoodsNum.innerHTML>0){
+	// 		  console.log(oGoodsNum.innerHTML);
+	// 		     oGoodsNum.innerHTML=Number(oGoodsNum.innerHTML)-1
+ //       	}else{
+	// 		btn.parentNode.parentNode.remove();
+	// 	}
+	// 	
+	// }
+	//商品增加
+	//  function goodsplus(btn){
+ //         let oGoodsNum=btn.previousElementSibling;
+	// 	 console.log(oGoodsNum.innerHTML);//先找到数量，再找单价,单价是不变的
+ //           oGoodsNum.innerHTML=Number(oGoodsNum.innerHTML)+1;//数量
+	// 	}
+	
+
+		
+	//该行可有可无  复选框在点击后自动有属性checked;
+	$(".checkbox").click(function(){
+		$(this).attr("checked",true);
+		
+	});
+	
+	//清空购物车
+	$(".del-all").click(function(){
+		$("tbody").remove();
+	});
+	
+	//计算总价
+		function totalPrice(){
+		let m = $("tbody tr").length;
+		// let m = $("tbody tr").children("input:checked").length;
+		// console.log(m);
+		let sum=0;
+		for(let i=0;i<m;i++){
+			sum+= Number($(".mount").eq(i).html())* Number($(".gprice").eq(i).html());
+		}
+		// console.log(m);
+		$(".sumPrice").html(sum);
+	}
+	
+	//用户渲染
+	function setCookie(key,value,day){
+	      let d = new Date();
+	      d.setDate(d.getDate()+day);
+	      document.cookie = key+"="+value+";expires=" + d;
+	  }
+	      function getCookie(key){
+	      let str = document.cookie;
+	      let arr = str.split("; ");//分号后的空格不要删 cookie之间的键值对是通过分号+空格
+	      for(let i=0; i<arr.length; i++){
+	          let item = arr[i].split("=");
+	          if(item[0] == key){
+	              return item[1];
+	          }
+	      }
+		}
+	function delCookie(key){
+	      setCookie(key," ",-1);
+	  }
+		let pho =  getCookie("pho");
+		console.log(pho);
+	
+		if(pho){
+			$("#top-left1").css({display:"none"});
+			$("#top-left2").css({display:"block"});
+			$("#name").html(pho);
+	
+		}else{
+			
+			$("#top-left1").css({display:"block"});
+			$("#top-left2").css({display:"none"});
+		}
+	
+		$("#out").click(function(){
+	
+			delCookie("pho");
+			alert("退出成功，请重新登录！");
+			location.href = "login.html"
+	
+		});
+
+//保存数据
+
+function saveData(){
+	//1、把界面上的内容，组织成json数组的形式。
+	let arr = [];
+	let rows = $("tbody tr");
+	for(let i=0;i<rows.length;i++){
+		var goods ={
+			id:$(".tId").eq(i).html(),
+			img:$(".tImg").eq(i).html(),
+			name:$(".tName").eq(i).html(),
+			size:$(".tSize").eq(i).html(),
+			price:$(".gprice").eq(i).html(),
+			mount:$(".mount").eq(i).html()
+		}
+		arr.push(goods);
+	}
+
+	//2、存储（localStorage）
+	var str = JSON.stringify(arr);
+
+	localStorage.setItem('shoppingCar',str);
+}
+//获取购物车数据
+function getData(){
+	let str = localStorage.getItem("shoppingCar");
+	// console.log(str);
+	if(str==null){
+		return;
+	}
+	let arr = JSON.parse(str);
+	let rows = $("tbody tr");
+	// let totalMoney = 0;
+	for(let i=0;i<arr.length;i++){
+		$(".tId").eq(i).html(arr[i].id);	
+		$(".tImg").eq(i).html(arr[i].img);
+		$(".tName").eq(i).html(arr[i].name);
+		$(".tSize").eq(i).html(arr[i].size);
+		$(".gprice").eq(i).html(arr[i].price);
+		$(".mount").eq(i).html( arr[i].mount);
+		// console.log(arr[i].mount);
+	}
+	//$(".mount").eq(2).html(9999);
+}
+				
+// $("#btnSave").click(function(){
+// 					saveData();
+// 					// getData();
+// 				});
+// window.onload=function(){
+// 						getData();
+// 						
+// 					}
+</script>

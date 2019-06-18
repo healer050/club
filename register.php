@@ -10,17 +10,17 @@ $conn = mysql_connect("localhost:3307","root","root");
 // }
 	
 	 //选择数据库
-	mysql_select_db("vivo");
+	mysql_select_db("club");
 	//获取请求过来的数据
 	$name = $_POST["username"];
 	$pwd = $_POST["userpwd"];
 	$tel = $_POST["usertel"];
 
 
-	$reslut = mysql_query("select * from vivoUser where vname='$name'",$conn);
+	$reslut = mysql_query("select * from clubuser where uname='$name'",$conn);
 	$rows = mysql_num_rows($reslut);
 	if($rows ==0){
-		mysql_query("insert into vivoUser values('$name','$tel','$pwd')",$conn);
+		mysql_query("insert into clubuser values('$name','$tel','$pwd')",$conn);
 	}
 
 	header("refresh:0;url=login.html");

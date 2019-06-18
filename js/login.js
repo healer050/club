@@ -56,10 +56,13 @@ logBtn.onclick = function(){
 			if(str1 == "1"){
 				// console.log(str);
 
-				alert("登录成功");
+				setCookie("name",oUserName.value,5);
+
+
+				alert("登录成功！");
 				location.href = "home.html";
 			}else if(str1 == "0"){
-				alert("用户名不存在，请先注册");
+				alert("用户名或密码不正确！");
 					// location.href = "register.html";
 			}
 	}

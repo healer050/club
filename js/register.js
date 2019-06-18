@@ -82,7 +82,7 @@ qpwd.onblur = function(){
 
 
 	//显示验证码
- acode = document.getElementById("acode");
+ var acode = document.getElementById("acode");
 	var string = codeMain();
 	span[4].innerHTML =string;
 

@@ -5,11 +5,11 @@ $conn = mysql_connect("localhost:3307","root","root");
 
 	// echo $name;
 
-	mysql_select_db("vivo");
+	mysql_select_db("club");
 	//获取请求过来的数据
 	$name = $_POST["username"];
 
-	$reslut = mysql_query("select * from vivoUser where vname='$name'");
+	$reslut = mysql_query("select * from clubuser where uname='$name'");
 	$rows = mysql_num_rows($reslut);
 	if($rows ==1){
 		echo "1";
